@@ -16,10 +16,10 @@
             .gif (para animaciones)
             .webp(mas liviano que jpg y png)
         -->
-        <h2>Potafolio</h2>
+   <!--      <h2>Potafolio</h2>
 <img src="img/portafolio.svg" alt="es la portafolio" width="250">
 <h2>El universo</h2>
-<img src="img/universo.jpg" alt="es el univeso" width="200">
+<img src="img/universo.jpg" alt="es el univeso" width="200"> -->
 <!-- divecepixelratio
 pixeles de viewport (PV)
     Pixeles disponibles para mostarr contenido
@@ -28,10 +28,36 @@ Pixeles reales
 
 devicepixelratio = PR / PV
 -->
-<h2>SRCSET</h2>
+<!-- <h2>SRCSET</h2>
 <img 
-srcset="img/portafolio.svg 2x , img/universo.jpg 4x">  
+srcset="img/portafolio.svg 2x , img/universo.jpg 4x"> -->  
+<!-- <picture>
+<source srcset="img/portafolio.svg" media="(min-width: 800px)">
+<source srcset="img/goku.jpg" media="(min-width: 300px)">
+<img src="img/portafolio.svg" media="(min-width: 400px)">
+</picture> -->
+<!-- figure: mostar un contenido que rompe con el flujo de contenido
+pero que pertenesca al mismo -->
+<figure>
+    
+    <img src="img/goku2.png" width=40>
+    <figcaption>
+        puesto para ver figcaption
+    </figcaption>
+</figure>
+<!-- Video y audio -->
+<!-- autoplay: comientop automatico del video
+    muted
+    poster
+    para video formato mp4 y codec h264 (buscar informacion)
+-->
+<video src="img/video EDteam V2.m4a" 
+controls
+poster="img/goku2.png"
+width="350px"
+>
 
+</video>
 
 </body>
 </html>
