@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
+    <link rel="stylesheet" href="css.css">
     <style>
         div{
             margin-bottom: 12.5px;
@@ -13,6 +14,7 @@
     </style>
 </head>
 <body>
+    <a href="option.html">Opciones de seleccion</a>
     <!-- Estructura de formulario -->
     <!-- 
     placeholder= 
@@ -21,17 +23,64 @@ action= hacia donde va a ir el formulario
 -->
     <h1>Nos puedes dejar tu comentario</h1>
     <form action="">
+<fieldset>
+    <legend>Datos Personales</legend>
         <div>
-            <input type="text" placeholder="Tu nombre por favor" name="nombre">
+            <label for="username">Tu nombre</label>
+            <input id="username"   type="text"  name="nombre">
         </div>
         <div>
-            <input type="text" placeholder="Email" name="correo">
+            <label for="correo">Email</label>
+            <input id="correo" type="text"  name="correo">
         </div>
         <div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
+    
+</fieldset> 
+<br>
+<fieldset> <legend>Escribe tu comentario</legend>
+            <label for="comment">Cometario</label>      <br>  
+            <textarea name="" id="comment" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
         </div>
-        <button>Enviar</button>
-        <input type="submit" value="Registrar">
+</fieldset>
+<br>
+<fieldset>
+<div>       
+<!-- input de tipo number -->
+<label for="">Numeros__    
+    <input type="number">
+</label></div>
+<div>
+<!-- input para fecha -->
+<label for="">Fecha__    
+    <input type="date">
+</label>
+</div>
+<div>
+<!-- input para numeros telefonicos-->
+<label for="">telefonos__    
+    <input type="tel">
+</label>
+</div>
+<div>
+<!-- input para color-->
+<label for="">color__    
+    <input type="color">
+</label>
+</div>
+<!-- input para password-->
+<label for="">password__    
+    <input type="password">
+</label>
+</div>
+<!-- input para password-->
+<label for="">Rango__    
+    <input type="range" min="1" max="20" >
+</label>
+</div>
+</fieldset>
+
     </form>
+    <button>Enviar</button>
+    <input type="submit" value="Registrar">
 </body>
 </html>

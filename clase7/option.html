@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opciones de seleccion</title>
+</head>
+<body>
+    <!--para phacer una lista donde la persona puede seleccionar
+    una o varias cosas a la vez -->
+<fieldset>
+    <legend>Elige lo qu ete gusta</legend>
+    <div>
+        <input type="checkbox" name="aficiones"value="cine" id="">
+        <label for="">cine</label>
+    </div>
+    <div>
+        <input type="checkbox" name="aficiones" value="musica" id="">
+        <label for="">Musica</label>
+    </div>
+    <div>
+        <input type="checkbox" name="aficiones" value="comida" id="">
+        <label for="">Comida</label>
+    </div>
+</fieldset>
+<fieldset><!-- para elegir solo uno seleccion -->
+    <legend>Elige uno</legend>
+    <div>
+        <label for="">
+            <input type="radio" name="sexo" id="">
+            Hombre
+        </label>
+        <label for="">
+            <input type="radio" name="sexo" id="">
+            Mujer
+        </label>
+        <label for="">
+            <input checked type="radio" name="sexo" id="" >
+            Otro
+        </label>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Seleccion de algo</legend>
+    <select name="city" id="">
+        <optgroup label="cual quieres">
+        <option value="san">Santo Domingo</option>
+        <option value="sat">Santiago</option>
+        <option value="val" selected >Mao</option>
+        </optgroup>
+    <optgroup label="cual te gusta">
+        <option value="san">Santo Domingo</option>
+        <option value="sat">Santiago</option>
+        <option value="val">Mao</option>
+    </optgroup>
+    </select>
+</fieldset>
+<fieldset>
+<!-- en esta lista se puede buscar lo deseado
+    teda sujerencias para ello -->
+    <input type="list" list="country">
+    <datalist id="country"> 
+        <option checked value="Santo Domingo"></option>
+        <option value="Santiago"></option>
+        <option value="Mao"></option>
+        <option value="Esperanza"></optgroup>
+        <option value="Kilomtro 7"></optgroup>
+        <option selected value="Navarrete" ></optgroup>
+        
+    </datalist>
+</fieldset>
+<label for="">Tu nombre<input type="text" name="username" id="" value="alvaro"
+    readonly></label>
+
+<!-- atributos de un formulario
+placeholder: dar un ejemplo de lo que es ese input
+type: el tipo de input
+required: para poner el cambio es obligatorio
+readonly: solo lectura
+autocomplete="on|off"(es de la etiqueta form)
+checked
+radiobutton
+selected
+
+-->
+</body>
+</html>
